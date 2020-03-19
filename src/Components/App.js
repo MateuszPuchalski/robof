@@ -1,11 +1,25 @@
 import React, { useState, useEffect } from "react";
-
+import { connect } from "react-redux";
 import faker from "faker";
 import CardList from "./CardList";
 import SearchBox from "./SearchBox";
+import Scroll from "./Scroll";
 
-export default function App() {
-  const [searchfield, setSearchfield] = useState("");
+import { setSearchField } from "../actions";
+
+const mapStateToProps = state => {
+  return {
+    searchField: state.searchField
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    onSearchChange: event => dispatch(setSearchField(event.target.value))
+  };
+};
+
+function App({ searchField, onSearchChange }) {
   const [robots, setRobots] = useState([]);
   const [filteredRobots, setFilteredRobots] = useState([]);
 
@@ -26,20 +40,20 @@ export default function App() {
 
   useEffect(() => {
     const arr = robots.filter(robot => {
-      return robot.name.toLowerCase().includes(searchfield.toLocaleLowerCase());
+      return robot.name.toLowerCase().includes(searchField.toLocaleLowerCase());
     });
     setFilteredRobots(arr);
-  }, [robots, searchfield]);
+  }, [robots, searchField]);
 
   return (
     <div className="tc">
       <h1>Robof</h1>
-      <SearchBox
-        searchChange={evt => {
-          setSearchfield(evt.target.value);
-        }}
-      />
-      <CardList robots={filteredRobots} />
+      <SearchBox onChange={onSearchChange} />
+      <Scroll>
+        <CardList robots={filteredRobots} />
+      </Scroll>
     </div>
   );
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
