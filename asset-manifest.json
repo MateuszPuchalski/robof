@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/robof/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/robof/static/js/main.6d744176.chunk.js",
-    "main.js.map": "/robof/static/js/main.6d744176.chunk.js.map",
+    "main.js": "/robof/static/js/main.84c50cac.chunk.js",
+    "main.js.map": "/robof/static/js/main.84c50cac.chunk.js.map",
     "runtime-main.js": "/robof/static/js/runtime-main.f55e852a.js",
     "runtime-main.js.map": "/robof/static/js/runtime-main.f55e852a.js.map",
     "static/css/2.3b6f1bda.chunk.css": "/robof/static/css/2.3b6f1bda.chunk.css",
     "static/js/2.250b9c49.chunk.js": "/robof/static/js/2.250b9c49.chunk.js",
     "static/js/2.250b9c49.chunk.js.map": "/robof/static/js/2.250b9c49.chunk.js.map",
     "index.html": "/robof/index.html",
-    "precache-manifest.a82b41bc2bddeb89ce5cd321ef801ec9.js": "/robof/precache-manifest.a82b41bc2bddeb89ce5cd321ef801ec9.js",
+    "precache-manifest.118368be1f69c50ad589e04b18260899.js": "/robof/precache-manifest.118368be1f69c50ad589e04b18260899.js",
     "service-worker.js": "/robof/service-worker.js",
     "static/css/2.3b6f1bda.chunk.css.map": "/robof/static/css/2.3b6f1bda.chunk.css.map",
     "static/css/main.5ecd60fb.chunk.css.map": "/robof/static/css/main.5ecd60fb.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.3b6f1bda.chunk.css",
     "static/js/2.250b9c49.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.6d744176.chunk.js"
+    "static/js/main.84c50cac.chunk.js"
   ]
 }
