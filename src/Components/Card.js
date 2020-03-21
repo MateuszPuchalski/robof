@@ -3,7 +3,7 @@ import React from "react";
 export default function Card({ name, username, email }) {
   return (
     <div className="bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
-      <img src={`https://robohash.org/${username}?200x200`} alt="Robof" />
+      <img src={`https://robohash.org/${username}?size=200x200`} alt="Robof" />
       <div>
         <h2>{name}</h2>
         <p>{email}</p>
